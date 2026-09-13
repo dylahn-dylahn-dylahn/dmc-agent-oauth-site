@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OAuth information for runtime-dmc-pi, a private single-user task service.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>runtime-dmc-pi</title>
+    <link rel="icon" href="mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="runtime-dmc-pi home">
+          <img src="mark.svg" width="36" height="36" alt="">
+          <span>runtime-dmc-pi</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a aria-current="page" href="index.html">Overview</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="shell hero-inner">
+          <p class="kicker">Private personal agent</p>
+          <h1>runtime-dmc-pi</h1>
+          <p class="lede">
+            A single-user service that runs on owner-controlled hardware and connects a dedicated agent Google account to explicitly configured personal workflows.
+          </p>
+        </div>
+      </section>
+
+      <section class="section shell" aria-labelledby="purpose-heading">
+        <div class="section-heading">
+          <p class="section-number">01</p>
+          <h2 id="purpose-heading">Purpose</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            runtime-dmc-pi helps its owner review information and carry out limited owner-directed tasks from a privately operated agent account. It is not offered as a public application or multi-user service.
+          </p>
+          <ul class="feature-list">
+            <li>Read messages in the dedicated agent mailbox when requested or when an owner-configured workflow requires them.</li>
+            <li>Draft email and send only after explicit owner approval or under a narrowly defined scheduled policy.</li>
+            <li>Read calendars that the owner explicitly shares with the agent account when calendar workflows are enabled.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-alt" aria-labelledby="boundaries-heading">
+        <div class="shell section-grid">
+          <div class="section-heading">
+            <p class="section-number">02</p>
+            <h2 id="boundaries-heading">Access boundaries</h2>
+          </div>
+          <div class="section-content">
+            <dl class="boundary-list">
+              <div>
+                <dt>Account-specific</dt>
+                <dd>Google authorization applies only to the agent account that grants consent. It does not grant access to the owner's other Google accounts.</dd>
+              </div>
+              <div>
+                <dt>Read-only inbox access</dt>
+                <dd>Mailbox reading does not delete, modify, label, archive, or mark messages as read.</dd>
+              </div>
+              <div>
+                <dt>Human control</dt>
+                <dd>External actions remain subject to explicit approval or a preconfigured policy with recipient and frequency limits.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" aria-labelledby="flow-heading">
+        <div class="section-heading">
+          <p class="section-number">03</p>
+          <h2 id="flow-heading">How data is handled</h2>
+        </div>
+        <div class="section-content">
+          <ol class="flow-list">
+            <li><strong>Authorize:</strong> The owner grants narrowly scoped Google OAuth access to the dedicated agent account.</li>
+            <li><strong>Process:</strong> Requested data is processed on owner-controlled hardware and, when necessary, by configured AI services.</li>
+            <li><strong>Review:</strong> Results are returned through private owner-controlled channels. Outbound actions follow approval rules.</li>
+            <li><strong>Revoke:</strong> The owner can revoke Google access and remove locally stored authorization at any time.</li>
+          </ol>
+          <p class="policy-link">Details are available in the <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <span>runtime-dmc-pi</span>
+        <span>Owner-operated personal service</span>
+      </div>
+    </footer>
+  </body>
+</html>
